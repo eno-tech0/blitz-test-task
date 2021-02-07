@@ -1,0 +1,13 @@
+.header {
+	background: url('/src/components/header/back.png') center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	transition: all linear 0.3s;
+}
+
+@media (max-width: 630px) {
+	.header {
+		height: 50vh;
+	}
+}

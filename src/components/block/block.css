@@ -1,0 +1,130 @@
+:root {
+	--white: white;
+	--dark: #bebebe;
+}
+
+.burger {
+	font-family: 'PT Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	display: none;
+}
+
+.burger.white {
+	color: var(--white);
+}
+
+.burger span {
+	font-size: 2rem;
+}
+
+.block-links {
+	text-align: center;
+	padding: 2.5rem 0;
+	transition: all linear 2s;
+}
+
+.block-links a {
+	font-family: 'PT Sans', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin-right: 4.375rem;
+	transition: all linear 0.3s;
+}
+
+.block-links a.white {
+	color: var(--white);
+}
+
+.block-links a.dark {
+	color: var(--dark);
+}
+
+.block-links a:last-child {
+	margin-right: 0;
+}
+
+hr {
+	margin: 0 3.75rem;
+}
+
+hr.white {
+	color: var(--white);
+}
+
+hr.dark {
+	color: var(--dark);
+}
+
+.swipe-arrow {
+	position: absolute;
+	bottom: 3.125rem;
+	width: 31.25rem;
+	left: calc(50% - 15.625rem);
+	text-align: center;
+}
+
+.swipe-arrow p {
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+	margin-bottom: 1.25rem;
+}
+
+.swipe-arrow p.white {
+	color: var(--white);
+}
+.swipe-arrow p.dark {
+	color: var(--dark);
+}
+
+.swipe-arrow div {
+	height: 2rem;
+	width: 2rem;
+	margin: 0 auto;
+}
+
+.swipe-arrow div.white {
+	background: url(./arrow-w.png);
+}
+
+.swipe-arrow div.dark {
+	background: url(./arrow-d.png);
+}
+
+.flex {
+	display: flex !important;
+}
+
+@media (max-width: 630px) {
+	.block-links {
+		display: none;
+		padding-top: 5rem;
+		padding-left: 4rem;
+		flex-direction: column;
+	}
+	.block-links a {
+		padding-top: 1rem;
+		align-self: flex-start;
+	}
+	hr {
+		display: none;
+	}
+	.swipe-arrow {
+		display: none;
+	}
+	.header .burger {
+		display: block;
+	}
+}
+
+@media (max-width: 475px) {
+	.swipe-arrow {
+		width: 27rem;
+	}
+}
